@@ -12,7 +12,7 @@ import java.util.List;
 public class InfoCommand {
 
     public static boolean onCommand(CommandSender sender, Command cmd, String la, String[] args , PixelmonCommand command) {
-        command.pixlemonRank.getBukkitScheduler().runTask(command.pixlemonRank , ()->{
+        command.pixlemonRank.getBukkitScheduler().runTaskAsynchronously(command.pixlemonRank , ()->{
             LogPostUtils.postPlayerLog(sender.getName() , "info");
             String name = args[1];
 
