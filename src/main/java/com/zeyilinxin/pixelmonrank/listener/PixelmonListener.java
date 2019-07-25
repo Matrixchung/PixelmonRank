@@ -1,6 +1,6 @@
 package com.zeyilinxin.pixelmonrank.listener;
 
-import catserver.api.bukkit.event.ForgeEvent;
+import red.mohist.event.BukkitHookForgeEvent;
 import com.pixelmonmod.pixelmon.Pixelmon;
 import com.pixelmonmod.pixelmon.api.events.battles.BattleEndEvent;
 import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
@@ -34,9 +34,9 @@ public class PixelmonListener implements Listener {
     }
 
     @EventHandler
-    public void onBattleEndEvent(ForgeEvent forgeEvent){
-        if (forgeEvent.getForgeEvent() instanceof BattleEndEvent){
-            BattleEndEvent event = (BattleEndEvent) forgeEvent.getForgeEvent();
+    public void onBattleEndEvent(BukkitHookForgeEvent forgeEvent){
+        if (forgeEvent.getEvent() instanceof BattleEndEvent){
+            BattleEndEvent event = (BattleEndEvent) forgeEvent.getEvent();
             if (event.getPlayers().size() == 2){
                 ArrayList<Player> playerArrayList = new ArrayList<>();
                 boolean isPVP = true;
