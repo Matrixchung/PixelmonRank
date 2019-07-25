@@ -42,6 +42,7 @@ public class PixelmonRank extends JavaPlugin {
             this.putInfo("开始写入默认配置文件");
             saveDefaultConfig();
             this.putInfo("写入默认配置文件成功");
+            Bukkit.getScheduler().cancelTasks(this);
             Bukkit.getPluginManager().disablePlugin(this);
             this.putInfo("已经卸载!等待配置!");
             return;
