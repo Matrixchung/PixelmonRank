@@ -10,7 +10,7 @@ import java.util.List;
 public class SetFractionCommand {
 
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args , PixelmonCommand command) {
-        command.pixlemonRank.getBukkitScheduler().runTask(command.pixlemonRank , ()->{
+        command.pixlemonRank.getBukkitScheduler().runTaskAsynchronously(command.pixlemonRank , ()->{
             LogPostUtils.postPlayerLog(sender.getName() , "setFraction");
             String name = args[2];
             List<String> list = new PixelmonStorae(command.pixlemonRank).getStorage().getPlayers();
