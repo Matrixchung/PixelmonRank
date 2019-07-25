@@ -1,2 +1,1 @@
-感谢观看
-QQ344801444
+Developing Fork from PixelmonRank to remove CatServer-API
