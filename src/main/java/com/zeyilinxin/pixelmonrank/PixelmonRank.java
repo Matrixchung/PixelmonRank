@@ -77,11 +77,11 @@ public class PixelmonRank extends JavaPlugin {
 
 
     public void putInfo(String info){
-        Bukkit.getConsoleSender().sendMessage("§c[§a神奇宝贝排位插件——§bCatServer端§c]§b信息输出:§6" + info);
+        Bukkit.getConsoleSender().sendMessage("§c[§a神奇宝贝排位插件——§bMohist端§c]§b信息输出:§6" + info);
     }
 
     public void warnInfo(String info){
-        Bukkit.getConsoleSender().sendMessage("§e[神奇宝贝排位插件——§bCatServer端§e]信息输出:§e" + info);
+        Bukkit.getConsoleSender().sendMessage("§e[神奇宝贝排位插件——§bMohist端§e]信息输出:§e" + info);
     }
 
     public BukkitScheduler getBukkitScheduler() {
